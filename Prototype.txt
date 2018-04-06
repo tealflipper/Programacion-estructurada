@@ -1,0 +1,30 @@
+InicializaJuego:
+	Dificultad: Lee que dificultad deseas
+		facil: 6*Submarinos
+		Mediano: 4*Submarinos
+		Dificil: 2*Submarinos
+
+	PrepararTablero:
+		GenerarNumAleatorio: genera un numero aleatorio
+		LimpiarArreglosDeJuego: Limpia los tableros de juego
+		SiembraSubmarinos: siembra aleatoriamente los Submarinos
+		DesplegarTablero: Despliega el tablero una vez
+		
+	LeaderBoard:
+		ModificarArchivo:
+			Si el puntaje es mejor a los 10 mejores puntajes Entonces:
+				entra a archivo, se elimina el ultimo
+	Jugar:
+		Turnos: Cuenta los Turnos Restantes 
+		LeeTiradaVálida: Lee una tirada valida
+		DesplegarTablero: Despliega el tablero una vez
+		Estalla: Estalla si la casilla es un submarino
+		ContarBarcos: Cuenta los submarinos sin hundir
+		Score: Cuenta puntos dependiendo a los submarinos hundidos
+		GanaPierde: Si gana entonces
+			Leaderboard
+		// Si gana o pierde, juego termina
+		Jugar: funcion recursiva 
+	Continuar: Pregunta si juega de nuevo
+		Si continuar es verdadero, repetir int main()
+
